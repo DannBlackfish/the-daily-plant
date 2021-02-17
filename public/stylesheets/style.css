@@ -14,6 +14,7 @@ body {
   margin: 0px;
   font: 14px "Oxygen";
   color: white;
+  background-size: cover;
 }
 
 a {
@@ -71,6 +72,52 @@ footer{
   text-align: right;
   font-family: 'Oswald';
   font-weight: 600;
+}
+
+.titleplant{
+  color: white;
+  text-align: center;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 50px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.subtitleplant{
+  color: white;
+  text-align: center;
+  font-family: 'Oswald';
+  font-weight: 600;
+  font-size: 80px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.subtitle{
+  color: white;
+  text-align: center;
+  font-family: 'Oxygen';
+  font-weight: 200;
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px 0px 50px 0px;
+}
+
+.parrafocenter{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.parrafocenter2{
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 0px;
+  margin: 0px 50px 30px 50px;
 }
 
 .parrafo{

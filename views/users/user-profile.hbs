@@ -19,6 +19,7 @@ Crear una ruta que reciba el parámetro router.get(/info/:id,(req,res,next)=>{
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
+    
     <button type="button" data-bs-target="#uno" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#dos" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#tres" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -26,7 +27,7 @@ Crear una ruta que reciba el parámetro router.get(/info/:id,(req,res,next)=>{
 
   <div class="carousel-inner">
 
-    <div class="carousel-item active" data-bs-target="#uno">
+    <div class="carousel-item active" data-bs-target="#uno" data-bs-slide-to="1">
       <img src="images/tomato.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         {{#each this.info}}
