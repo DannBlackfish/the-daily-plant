@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* 
+#3B506F
+#537694
+#92ABB2
+#DADAE4
+#F2F3F8
+*/
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Oxygen";
+  color: white;
+}
+
+a {
+  color: white; 
+}
+
+footer{
+  color: white;
+}
+
+.link{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  margin: 20px;
+  padding: 0px;
+}
+
+.logodos{
+  padding: 0px;
+  margin: 80px 0px 10px 0px;
+  align-items: center;
+}
+
+.enter{
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px 0px 50px 0px;
+  font-family: 'Oswald';
+  color: white;
+  font-weight: 400;
+}
+
+.title{
+  color: white;
+  font-size: 90px;
+  padding: 0px;
+  margin: 0px 0px 0px 40px;
+  font-family: 'Oswald';
+  font-weight: 600;
+}
+
+.titleizq{
+  color: white;
+  font-size: 90px;
+  padding: 0px;
+  margin: 0px 40px 0px 0px;
+  text-align: right;
+  font-family: 'Oswald';
+  font-weight: 600;
+}
+
+.parrafo{
+  color: white;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px 0px 100px 40px;
+}
+
+.parrafoizq{
+  color: white;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px 40px 0px 0px;
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
