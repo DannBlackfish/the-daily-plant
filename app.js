@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 
 // Set up the database
 mongoose
-  .connect('mongodb://localhost/the-daily-plant', {useNewUrlParser: true})
+  .connect('mongodb+srv://Dann:Holamundo2021@cluster0.dyzh4.mongodb.net/the-daily-plant', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
