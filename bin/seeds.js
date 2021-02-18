@@ -20,7 +20,7 @@ const info = [
       place:
         "Outside",
       image:
-        '/images/fruta_chili.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_chili_mpsscm.png'
     },
     {
       name: 'LETTUCE',
@@ -31,7 +31,7 @@ const info = [
       place:
         "Outside",
       image:
-        '/images/fruta_lettuce.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_lettuce_xzklqc.png'
     },
     {
       name: 'STRAWBERRY',
@@ -42,7 +42,7 @@ const info = [
       place:
         "Outside/Inside",
       image:
-        '/images/fruta_strawberry.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_strawberry_pfgepq.png'
     },
     {
       name: 'TOMATO',
@@ -53,7 +53,7 @@ const info = [
       place:
         "Outside/Inside",
       image:
-        '/images/fruta_tomato.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681483/fruta_tomato_b2yfxi.png'
     },
     {
       name: 'PEACH',
@@ -64,7 +64,7 @@ const info = [
       place:
         "Outside",
       image:
-        '/images/fruta_peach.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_peach_mugu8n.png'
     },
     {
       name: 'APPLE',
@@ -75,7 +75,7 @@ const info = [
       place:
         "Outside",
       image:
-        '/images/fruta_apple.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_apple_yabiyk.png'
     },
     {
       name: 'ORANGE',
@@ -86,7 +86,7 @@ const info = [
       place:
         "Outside",
       image:
-        '/images/fruta_orange.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_orange_u9ercx.png'
     },
     {
       name: 'GREEN PEAS',
@@ -96,7 +96,7 @@ const info = [
       place:
         "Outside",
       image:
-        '/images/fruta_greenpeas.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_greenpeas_acrau4.png'
     },
     {
       name: 'CUCUMBER',
@@ -106,7 +106,7 @@ const info = [
       place:
         "Outside/Inside",
       image:
-        '/images/fruta_cucumber.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_cucumber_wwbrh0.png'
     },
     {
       name: 'GUAVA',
@@ -116,7 +116,7 @@ const info = [
       place:
         "Outside",
       image:
-        '/images/fruta_guava.png'
+        'https://res.cloudinary.com/dannblackfish/image/upload/v1613681482/fruta_guava_nu6we1.png'
     }
   ];
   

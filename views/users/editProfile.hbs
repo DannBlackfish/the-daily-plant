@@ -1,0 +1,12 @@
+<div id="signup">
+  <form action="/editProfile" method="POST" enctype="multipart/form-data">
+    <label for="input-username"> Username </label>
+    <input type="text" value="{{this.userInSession.username}}" name="username" placeholder="Your username" />
+
+    <label>Profile Image</label>
+    <input type="file" name="imageProfile"/>
+ 
+    <button type="submit">Edit Profile</button>
+ 
+  </form>
+</div>

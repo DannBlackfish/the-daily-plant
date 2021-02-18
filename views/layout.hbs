@@ -26,7 +26,10 @@
           </li>
           {{#if userInSession}}
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bienvenido/a {{ userInSession.username }}</a>
+            <a class="nav-link" href="editProfile" tabindex="-1" aria-disabled="true">Edit Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="userProfile" tabindex="-1" aria-disabled="true">Welcome {{ userInSession.username }}</a>
           </li>
           {{/if}}
         </ul>

@@ -6,15 +6,17 @@ const saltRounds    = 10;
 const mongoose      = require('mongoose');
 const User          = require('../models/User.model')
 const Info          = require('../models/Info.model.js');
+const uploadCloud   = require('../configs/cloudinary.config.js')
 
 // RUTAS
 // GET - REGISTRO
 router.get('/signup', (req, res) => res.render('auth/signup'));
 
 // POST - REGISTRO
-router.post('/signup', (req, res, next) => {
+router.post('/signup', uploadCloud.single('imageProfile'), (req, res, next) => {
   console.log(req.body)
   const { username, email, password } = req.body;
+  const urlimage = req.file.path
 
   const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 
@@ -37,11 +39,13 @@ router.post('/signup', (req, res, next) => {
       return User.create({
         username,
         email,
-        passwordHash: hashedPassword
+        passwordHash: hashedPassword,
+        imagen: urlimage
       });
     })
     .then(userFromDB => {
       console.log('Newly created user is: ', userFromDB);
+      req.session.currentUser = userFromDB;
       res.redirect('/userProfile');
     })
     .catch(error => {
@@ -65,7 +69,7 @@ router.get('/userProfile', (req, res) => {
 
   Info.find()
   .then((infoFromDB) => {
-    console.log(infoFromDB)
+    console.log(req.session.currentUser)
     if (day === 6) {
       res.render('users/user-profile', {
         message: 'Today is the day to water your plant',
@@ -83,9 +87,37 @@ router.get('/userProfile', (req, res) => {
     console.log("Can't show the plants")
     next(error)
   })
-
-
 });
+
+//GET UPDATE USUARIO
+router.get('/editProfile', (req,res,next) => {
+
+  res.render('users/editProfile', {
+    userInSession: req.session.currentUser,
+  })
+
+})
+
+router.post('/editProfile', uploadCloud.single('imageProfile'), (req,res,next) =>{
+  const {username} = req.body
+  const {_id} = req.session.currentUser
+
+  if(!req.file){
+    const path = req.session.currentUser.imagen
+    User.findByIdAndUpdate(_id, {$set: {username,imagen:path}},{new:true})
+    .then((responseDB)=>{
+      req.session.currentUser = responseDB
+      res.redirect('/userProfile')
+    })
+  } else{
+    const {path} = req.file
+    User.findByIdAndUpdate(_id, {$set: {username,imagen:path}},{new:true})
+  .then((responseDB)=>{
+    req.session.currentUser = responseDB
+    res.redirect('/userProfile')
+  })
+  }  
+})
 
 
 // LOGIN

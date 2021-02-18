@@ -19,6 +19,10 @@ const userSchema = new Schema(
     passwordHash: {
       type: String,
       required: [true, 'Password is required.']
+    },
+    imagen: {
+      type: String,
+      default: 'https://benidorm.org/wp-content/img/cabecera/perfil-anonimo.jpg'
     }
   },
   {
