@@ -6,7 +6,6 @@ const saltRounds    = 10;
 const mongoose      = require('mongoose');
 const User          = require('../models/User.model')
 const Info          = require('../models/Info.model.js');
-const uploadCloud   = require('../configs/cloudinary.config.js')
 
 // RUTAS
 // GET - REGISTRO
@@ -153,36 +152,26 @@ router.get('/private' ,(req,res) => {
 
 
 //Adding New Plants
-router.get('/info/new', (req, res, next) => {
-  res.render('info/new')
-});
+// router.get('/info/new', (req, res, next) => {
+//   res.render('info/new')
+// });
 
-router.post('/info/new', uploadCloud.single('image'), (req, res, next) => {
-  const {name} = req.body
-  const urlimage = req.file.path
-  Info.create({
-    name
-  })
-  .then((addPlant) => {
-    res.redirect('/info')
-  })
+// router.post('/info/new', uploadCloud.single('image'), (req, res, next) => {
+//   const {name} = req.body
+//   const urlimage = req.file.path
+//   Info.create({
+//     name
+//   })
+//   .then((addPlant) => {
+//     res.redirect('/info')
+//   })
 
-  .catch(error => {
-    res.render('info/new')
-  })
-});
+//   .catch(error => {
+//     res.render('info/new')
+//   })
+// });
 
-//Deleting Plants
-router.post('/info/delete/:id', (req, res, next) => {
-  
-  const id = req.params.id
 
-  Info.findByIdAndDelete(id)
-  .then(() =>{
-    res.redirect('/info')
-  })
-  .catch((error)=> next(error))
-});
 
 // EXPORTACIÓN
 module.exports = router;

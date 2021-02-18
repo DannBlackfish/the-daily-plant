@@ -14,7 +14,11 @@ body {
   margin: 0px;
   font: 14px "Oxygen";
   color: white;
+}
+
+main{
   background-size: cover;
+  margin: auto;
 }
 
 a {
@@ -57,16 +61,25 @@ footer{
 
 .title{
   color: white;
-  font-size: 90px;
+  font-size: 85px;
   padding: 0px;
-  margin: 0px 0px 0px 40px;
+  margin: 30px 0px 0px 40px;
+  font-family: 'Oswald';
+  font-weight: 600;
+}
+
+.titlelogin{
+  color: white;
+  font-size: 60px;
+  padding: 0px;
+  margin: 20px 0px 30px 40px;
   font-family: 'Oswald';
   font-weight: 600;
 }
 
 .titleizq{
   color: white;
-  font-size: 90px;
+  font-size: 85px;
   padding: 0px;
   margin: 0px 40px 0px 0px;
   text-align: right;
@@ -90,6 +103,16 @@ footer{
   font-family: 'Oswald';
   font-weight: 600;
   font-size: 80px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.subtitleplants{
+  color: white;
+  text-align: center;
+  font-family: 'Oswald';
+  font-weight: 600;
+  font-size: 50px;
   padding: 0px;
   margin: 0px 0px 0px 0px;
 }
@@ -134,5 +157,13 @@ footer{
   margin: 0px 40px 0px 0px;
   text-align: right;
 }
+
+.date{
+  color: white;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px 15px 0px 40px;
+}
+
 
 /*# sourceMappingURL=style.css.map */
