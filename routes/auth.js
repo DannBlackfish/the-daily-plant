@@ -164,13 +164,6 @@ router.post('/login', (req, res, next) => {
 
 })
 
-// LOGOUT
-router.post('/logout', (req, res) => {
-  req.session.destroy();
-  res.redirect('/');
-});
-
-//
 
 // PRIVADO
 router.get('/private' ,(req,res) => {
@@ -182,26 +175,31 @@ router.get('/private' ,(req,res) => {
   res.send("No estas loggeado, es un área privada X.")
 })
 
+//LOGOUT
+router.post('/logout', (req,res,next) => {
+  req.session.destroy()
+  res.redirect('/')
+})
 
-//Adding New Plants
-// router.get('/info/new', (req, res, next) => {
-//   res.render('info/new')
-// });
+// Adding Reminder
+router.get('/movies/new', (req, res, next) => {
+  res.render('movies/new')
+});
 
-// router.post('/info/new', uploadCloud.single('image'), (req, res, next) => {
-//   const {name} = req.body
-//   const urlimage = req.file.path
-//   Info.create({
-//     name
-//   })
-//   .then((addPlant) => {
-//     res.redirect('/info')
-//   })
-
-//   .catch(error => {
-//     res.render('info/new')
-//   })
-// });
+router.post('/movies/new', (req, res, next) => {
+  const {title, genre, plot} = req.body
+  
+  Movie.create({
+    title, genre, plot
+  })
+  .then((moviesCreate) => {
+  
+    res.redirect('/movies')
+  })
+  .catch(error => {
+    res.render('movies/new')
+  })
+});
 
 
 

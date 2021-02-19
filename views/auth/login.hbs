@@ -1,5 +1,6 @@
 <form action="/login" method="POST">
   <h2 class="titlelogin">LOGIN</h2>
+  
   <div class="row mb-3">
     <label name="email" for="email" class="col-sm-1 col-form-label date">Email</label>
     <div class="col-sm-5">
@@ -14,8 +15,10 @@
     </div>
   </div>
 
-  <button type="submit" class="btn btn-primary">Login</button>
+  <button type="submit" class="btn btn-light btn-login">Login</button>
     {{#if errorMessage}}
       <p class="error">{{errorMessage}}</p>
     {{/if}}
 </form>
+
+<img class="d-flex justify-content-center imagelogin " src="/images/background_3.png"/>

@@ -3,7 +3,7 @@ const Info         = require('../models/Info.model.js')
 
 const DB_NAME = 'the-daily-plant'//Nombre de base de datos
 
-mongoose.connect(`mongodb://localhost/${DB_NAME}`,{
+mongoose.connect(`mongodb+srv://Dann:Holamundo2021@cluster0.dyzh4.mongodb.net/the-daily-plant`,{
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true

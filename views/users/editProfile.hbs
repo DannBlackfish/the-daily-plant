@@ -1,12 +1,22 @@
+<h2 class="titleprofile">EDIT YOUR PROFILE</h2>
+
 <div id="signup">
   <form action="/editProfile" method="POST" enctype="multipart/form-data">
-    <label for="input-username"> Username </label>
-    <input type="text" value="{{this.userInSession.username}}" name="username" placeholder="Your username" />
+  <div class="row mb-3"> 
+    <label class="col-sm-1 col-form-label date" for="input-username"> Username </label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" value="{{this.userInSession.username}}" name="username" placeholder="Your username" />
+    </div>
+    <div class="mb-2">
+      <label class="col-sm-5 col-form-label date">Profile Image</label>
+      <input class="form-control date2 w-75 " type="file" name="imageProfile" id="formFile"/>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-outline-light btn-edit">Edit</button> 
 
-    <label>Profile Image</label>
-    <input type="file" name="imageProfile"/>
- 
-    <button type="submit">Edit Profile</button>
- 
-  </form>
+    <button href="/userProfile" class="btn btn-light btn-goback">Go back</button> 
+    </form>
+
 </div>
+
+

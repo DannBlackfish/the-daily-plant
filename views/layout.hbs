@@ -16,7 +16,7 @@
         </a>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a color="white" class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login">Login</a>
@@ -28,6 +28,12 @@
           <li class="nav-item">
             <a class="nav-link" href="editProfile" tabindex="-1" aria-disabled="true">Edit Profile</a>
           </li>
+
+          <li class="nav-item">
+            <form id="logout-form" action="/logout" method="POST">
+              <button class="btn btn-outline-light" class="nav-link">Logout</button>
+            </form>
+          </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="userProfile" tabindex="-1" aria-disabled="true">Welcome {{ userInSession.username }}</a>
           </li>
@@ -37,8 +43,6 @@
     </nav>
 
   {{{body}}}
-
-
 
 
   <script src="/javascripts/script.js"></script>

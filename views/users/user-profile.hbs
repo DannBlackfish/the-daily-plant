@@ -130,16 +130,24 @@ Crear una ruta que reciba el parámetro router.get(/info/:id,(req,res,next)=>{
     <h1>This is your profile {{userInSession.username}}</h1>
     <img src="{{this.userInSession.imagen}}" class="rounded" width="150px" alt="ProfileImage">
 
-    <p class="card-text">{{this.message}}</p>
+    {{!-- <p class="card-text">{{this.message}}</p> --}}
     
 
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-  {{!-- <div>
-    <a action="/info/delete/{{id}}" method="POST" type="submit">Delete Plant</a>
-  </div> --}}
+ 
+<table class="table table-dark">
+    <tr>
+      <th scope="row">{{this.message}}</th>
+      <form action="/login" method="POST">
+      </form>
+    </tr>
+  </tbody>
+</table>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Add a reminder</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <button type="submit" class="btn btn-dark">Submit</button>
+</div>
 
 
 <div>

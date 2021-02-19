@@ -19,6 +19,8 @@ body {
 main{
   background-size: cover;
   margin: auto;
+  width: 544.251968504px;
+
 }
 
 a {
@@ -27,6 +29,7 @@ a {
 
 footer{
   color: white;
+  align-items: center;
 }
 
 .link{
@@ -61,11 +64,21 @@ footer{
 
 .title{
   color: white;
-  font-size: 85px;
+  font-size: 60px;
   padding: 0px;
   margin: 30px 0px 0px 40px;
   font-family: 'Oswald';
   font-weight: 600;
+}
+
+.titlecenter{
+  color: white;
+  font-size: 55px;
+  padding: 0px;
+  margin: 40px 0px 20px 0px;
+  font-family: 'Oswald';
+  font-weight: 600;
+  text-align: center;
 }
 
 .titlelogin{
@@ -77,9 +90,27 @@ footer{
   font-weight: 600;
 }
 
+.titleprofile{
+  color: white;
+  font-size: 50px;
+  padding: 0px;
+  margin: 20px 0px 30px 40px;
+  font-family: 'Oswald';
+  font-weight: 600;
+}
+
+.titlelogin2{
+  color: white;
+  font-size: 60px;
+  padding: 0px;
+  margin: 20px 0px 10px 40px;
+  font-family: 'Oswald';
+  font-weight: 600;
+}
+
 .titleizq{
   color: white;
-  font-size: 85px;
+  font-size: 60px;
   padding: 0px;
   margin: 0px 40px 0px 0px;
   text-align: right;
@@ -127,6 +158,15 @@ footer{
   margin: 0px 0px 50px 0px;
 }
 
+.subtitlesignup{
+  padding: 0px;
+  margin: 0px 0px 50px 40px;
+  font-family: 'Oxygen';
+  font-weight: 170;
+  font-size: 40px;
+  color: white;
+}
+
 .parrafocenter{
   color: white;
   text-align: center;
@@ -145,14 +185,14 @@ footer{
 
 .parrafo{
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0px;
   margin: 0px 0px 100px 40px;
 }
 
 .parrafoizq{
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0px;
   margin: 0px 40px 0px 0px;
   text-align: right;
@@ -162,12 +202,75 @@ footer{
   color: white;
   font-size: 15px;
   padding: 0px;
-  margin: 0px 15px 0px 40px;
+  margin: 0px 40px 0px 40px;
+}
+
+.date2{
+  color: white;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px 0px 0px 40px;
 }
 
 .carruseltitle{
   color: #3B506F;
   font-size: 25px;
+}
+
+.redes{
+  color: white;
+  font-family: 'Oxygen';
+  font-size: 20px;
+  margin: 0px 20px 20px 40px;
+  padding: 0px;
+}
+
+.twitterimg{
+  margin: 0px 0px 15px 50px;
+  padding: 0px;
+}
+
+.facebookimg{
+  margin: 0px 50px 15px 0px;
+  padding: 0px;
+}
+
+.instagramimg{
+  margin: 0px 0px 15px 0px;
+  padding: 0px;
+}
+
+.abajo{
+  margin: 0px 0px 40px 0px;
+  padding: 0px;
+}
+
+.imagelado{
+  display: flex
+}
+
+.btn-login{
+  margin: 10px 0px 0px 40px;
+  padding: 0px;
+}
+
+.btn-update{
+  margin: 10px 0px 350px 40px;
+  padding: 0px;
+}
+
+.btn-edit{
+  margin: 8px 0px 430px 40px;
+  padding: 0px;
+}
+
+.btn-goback{
+  margin: 8px 0px 430px 10px;
+  padding: 0px;
+}
+
+.imagelogin{
+  width: 540px;
 }
 
 
