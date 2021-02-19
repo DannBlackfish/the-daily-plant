@@ -89,15 +89,32 @@ router.get('/userProfile', (req, res) => {
   })
 });
 
+//GET REMINDER DE USUARIO
+router.get('/users/reminderUser', (req,res,next) => {
+  res.render('users/reminderUser', {
+    reminder: req.body
+  })
+})
+//POST DE REMINDER DE USUARIO
+router.post('/users/reminderUser', (req,res,next) =>{
+  const {_id} = req.session.currentUser
+  const {reminder} = req.body
+  console.log({reminder})
+
+    User.findByIdAndUpdate(_id, {$set: {reminder}},{new:true})
+    .then((responseDB)=>{
+      req.session.currentUser = responseDB
+      res.redirect('/users/reminderUser')
+    })
+})
+
 //GET UPDATE USUARIO
 router.get('/editProfile', (req,res,next) => {
-
   res.render('users/editProfile', {
     userInSession: req.session.currentUser,
   })
-
 })
-
+//POST UPDATE USUARIO
 router.post('/editProfile', uploadCloud.single('imageProfile'), (req,res,next) =>{
   const {username} = req.body
   const {_id} = req.session.currentUser
@@ -161,17 +178,14 @@ router.post('/login', (req, res, next) => {
           }
         })
         .catch(error => next(error));
-
 })
 
 
 // PRIVADO
 router.get('/private' ,(req,res) => {
-  
   if(req.session.currentUser) {
     return res.render("private")
   }
-
   res.send("No estas loggeado, es un área privada X.")
 })
 
@@ -180,27 +194,6 @@ router.post('/logout', (req,res,next) => {
   req.session.destroy()
   res.redirect('/')
 })
-
-// Adding Reminder
-router.get('/movies/new', (req, res, next) => {
-  res.render('movies/new')
-});
-
-router.post('/movies/new', (req, res, next) => {
-  const {title, genre, plot} = req.body
-  
-  Movie.create({
-    title, genre, plot
-  })
-  .then((moviesCreate) => {
-  
-    res.redirect('/movies')
-  })
-  .catch(error => {
-    res.render('movies/new')
-  })
-});
-
 
 
 // EXPORTACIÓN

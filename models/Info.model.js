@@ -7,7 +7,7 @@ const infoSchema = new Schema(
     origin: String,
     care: String,
     place: String,
-    image: String
+    image: String,
   }
 );
 

@@ -1,0 +1,32 @@
+<h3 class="subtitleremainder">ADD A REMAINDER</h3>
+<div>
+  <form action="/users/reminderUser" method="POST">
+    <div class="row mb-3">
+      <label class="col-sm-1 col-form-label date">Remainder</label>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" name="reminder" value="{{this.reminder}}" name="remainder" placeholder="Put your remainder"/>
+      </div>
+    </div>
+  
+  <button href="/users/reminderUser" class="btn btn-outline-light btn-remind" type="submit">Save changes</button>
+</form>
+</div>
+
+<h1 class="subtitleremainder2">REMAIND LIST</h1>
+<p class="parraforemaind">{{this.reminder}}</p>
+
+<a href="/userProfile" class="btn btn-outline-light btn-remind2" type="submit">Go back</a>
+
+
+{{!-- <form action="/users/reminderUser" method="POST">
+  <label class="col-sm-5 col-form-label date">
+    Title:
+    <input type="text" name="reminder" value="{{this.reminder}}" />
+  </label>
+  
+  <button type="submit">Save changes</button>
+</form>
+
+<p>{{this.reminder}}</p>
+
+<h2>Hola</h2> --}}

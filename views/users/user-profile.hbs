@@ -36,73 +36,33 @@ Crear una ruta que reciba el parámetro router.get(/info/:id,(req,res,next)=>{
 
           <div class="carousel-item active">
             <img src="images/fruta_chili.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>CHILI</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_lettuce.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>LETTUCE</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_strawberry.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>STRAWBERRY</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_tomato.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>TOMATO</h5>
-              <p>Some representative placeholder content for the four slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_peach.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>PEACH</h5>
-              <p>Some representative placeholder content for the five slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_apple.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>APPLE</h5>
-              <p>Some representative placeholder content for the six slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_orange.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>ORANGE</h5>
-              <p>Some representative placeholder content for the seven slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_greenpeas.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>GREEN PEAS</h5>
-              <p>Some representative placeholder content for the eight slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_cucumber.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>CUCUMBER</h5>
-              <p>Some representative placeholder content for the nine slide.</p>
-            </div>
           </div>
           <div class="carousel-item">
             <img src="images/fruta_guava.png" class="d-block w-100" alt="..." height="400px" width="500">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>GUAVA</h5>
-              <p>Some representative placeholder content for the ten slide.</p>
-            </div>
           </div>
 
         </div>
@@ -129,24 +89,19 @@ Crear una ruta que reciba el parámetro router.get(/info/:id,(req,res,next)=>{
   <div class="card-body">
     <h1>This is your profile {{userInSession.username}}</h1>
     <img src="{{this.userInSession.imagen}}" class="rounded" width="150px" alt="ProfileImage">
-
-    {{!-- <p class="card-text">{{this.message}}</p> --}}
-    
-
   </div>
  
 <table class="table table-dark">
     <tr>
       <th scope="row">{{this.message}}</th>
-      <form action="/login" method="POST">
-      </form>
     </tr>
-  </tbody>
 </table>
+
+
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Add a reminder</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <button type="submit" class="btn btn-dark">Submit</button>
+  <form action="/users/reminderUser" method="POST">
+    <a href="/users/reminderUser" type="submit" class="btn btn-outline-dark">Add a remainder</a>
+  </form>
 </div>
 
 

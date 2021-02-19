@@ -148,6 +148,25 @@ footer{
   margin: 0px 0px 0px 0px;
 }
 
+.subtitleremainder{
+  color: white;
+  text-align: center;
+  font-family: 'Oswald';
+  font-weight: 600;
+  font-size: 50px;
+  padding: 0px;
+  margin: 10px 0px 20px 0px;
+}
+
+.subtitleremainder2{
+  color: white;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px 0px 8px 40px;
+}
+
 .subtitle{
   color: white;
   text-align: center;
@@ -155,7 +174,7 @@ footer{
   font-weight: 200;
   font-size: 40px;
   padding: 0px;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 40px 50px 40px;
 }
 
 .subtitlesignup{
@@ -172,7 +191,7 @@ footer{
   text-align: center;
   font-size: 20px;
   padding: 0px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 40px 0px 40px;
 }
 
 .parrafocenter2{
@@ -180,7 +199,7 @@ footer{
   text-align: center;
   font-size: 28px;
   padding: 0px;
-  margin: 0px 50px 30px 50px;
+  margin: 0px 40px 30px 40px;
 }
 
 .parrafo{
@@ -213,7 +232,7 @@ footer{
 }
 
 .carruseltitle{
-  color: #3B506F;
+  color: white;
   font-size: 25px;
 }
 
@@ -269,9 +288,32 @@ footer{
   padding: 0px;
 }
 
+.btn-remind{
+  margin: 8px 0px 20px 40px;
+  padding: 0px;
+}
+
+.btn-remind2{
+  margin: 8px 0px 260px 40px;
+  padding: 0px;
+}
+
+.btn-remind3{
+  margin: 8px 0px 20px 210px;
+  padding: 0px;
+}
+
+.parraforemaind{
+  color: white;
+  margin: 0px 0px 30px 40px;
+  padding: 0px;
+
+}
+
 .imagelogin{
   width: 540px;
 }
+
 
 
 /*# sourceMappingURL=style.css.map */
