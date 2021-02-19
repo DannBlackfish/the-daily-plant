@@ -4,7 +4,7 @@
     <div class="row mb-3">
       <label class="col-sm-1 col-form-label date">Remainder</label>
       <div class="col-sm-8">
-        <input class="form-control" type="text" name="reminder" value="{{this.reminder}}" name="remainder" placeholder="Put your remainder"/>
+        <input class="form-control" type="text" name="reminder" name="remainder" placeholder="Put your remainder"/>
       </div>
     </div>
   
@@ -13,9 +13,13 @@
 </div>
 
 <h1 class="subtitleremainder2">REMAIND LIST</h1>
-<p class="parraforemaind">{{this.reminder}}</p>
+{{#each this.reminder.reminder}}
+<p class="parraforemaind">{{this}}</p>
+
+{{/each}}
 
 <a href="/userProfile" class="btn btn-outline-light btn-remind2" type="submit">Go back</a>
+
 
 
 {{!-- <form action="/users/reminderUser" method="POST">

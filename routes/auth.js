@@ -91,8 +91,9 @@ router.get('/userProfile', (req, res) => {
 
 //GET REMINDER DE USUARIO
 router.get('/users/reminderUser', (req,res,next) => {
+  console.log(req.session.currentUser)
   res.render('users/reminderUser', {
-    reminder: req.body
+    reminder: req.session.currentUser
   })
 })
 //POST DE REMINDER DE USUARIO
@@ -101,7 +102,7 @@ router.post('/users/reminderUser', (req,res,next) =>{
   const {reminder} = req.body
   console.log({reminder})
 
-    User.findByIdAndUpdate(_id, {$set: {reminder}},{new:true})
+    User.findByIdAndUpdate(_id, {$addToSet: {reminder}},{new:true})
     .then((responseDB)=>{
       req.session.currentUser = responseDB
       res.redirect('/users/reminderUser')

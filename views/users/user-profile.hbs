@@ -117,8 +117,8 @@ Crear una ruta que reciba el parámetro router.get(/info/:id,(req,res,next)=>{
         <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <a method="GET" href="/info/detail/{{this.id}}"><p>Information</p></a>
-            <form action="/info/delete/{{id}}" method="POST">
-                <button class="btn btn-primary" type="submit">Borrar</button>
+            <form action="/info/delete" method="POST">
+              <button class="btn btn-primary" type="submit">Borrar</button>
             </form>
           </div>
         </div>

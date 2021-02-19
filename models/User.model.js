@@ -23,6 +23,9 @@ const userSchema = new Schema(
     imagen: {
       type: String,
       default: 'https://benidorm.org/wp-content/img/cabecera/perfil-anonimo.jpg'
+    },
+    reminder: {
+      type: [String],
     }
   },
   {
